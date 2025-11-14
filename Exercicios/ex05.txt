@@ -1,0 +1,28 @@
+namespace CsharpEx05;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        ApresentarPrograma();
+        Calculo();
+    }
+
+    public static void ApresentarPrograma()
+    {
+        Console.WriteLine("Programa: Números pares entre início e fim");
+    }
+
+    public static void Calculo()
+    {
+        Console.Write("Início: ");
+        int inicio = Convert.ToInt32(Console.ReadLine());
+
+        Console.Write("Fim: ");
+        int fim = Convert.ToInt32(Console.ReadLine());
+
+        for (int i = inicio; i <= fim; i++)
+            if (i % 2 == 0)
+                Console.WriteLine(i);
+    }
+}

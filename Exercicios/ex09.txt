@@ -1,0 +1,24 @@
+namespace CsharpEx09;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        ApresentarPrograma();
+        Calculo();
+    }
+
+    public static void ApresentarPrograma()
+    {
+        Console.WriteLine("Programa: Tabuada");
+    }
+
+    public static void Calculo()
+    {
+        Console.Write("Número: ");
+        int n = Convert.ToInt32(Console.ReadLine());
+
+        for (int i = 1; i <= 10; i++)
+            Console.WriteLine($"{n} x {i} = {n * i}");
+    }
+}

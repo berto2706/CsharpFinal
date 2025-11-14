@@ -1,0 +1,29 @@
+namespace CsharpEx12;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        ApresentarPrograma();
+        Calculo();
+    }
+
+    public static void ApresentarPrograma()
+    {
+        Console.WriteLine("Programa: Triângulo Crescente");
+    }
+
+    public static void Calculo()
+    {
+        Console.Write("Altura: ");
+        int alt = Convert.ToInt32(Console.ReadLine());
+
+        for (int i = 1; i <= alt; i++)
+        {
+            for (int j = 1; j <= i; j++)
+                Console.Write("* ");
+
+            Console.WriteLine();
+        }
+    }
+}

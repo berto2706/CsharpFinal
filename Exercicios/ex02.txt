@@ -1,0 +1,24 @@
+namespace CsharpEx02;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        ApresentarPrograma();
+        Calculo();
+    }
+
+    public static void ApresentarPrograma()
+    {
+        Console.WriteLine("Programa: Regressivo até 1");
+    }
+
+    public static void Calculo()
+    {
+        Console.Write("Informe um número: ");
+        int n = Convert.ToInt32(Console.ReadLine());
+
+        for (int i = n; i >= 1; i--)
+            Console.WriteLine(i);
+    }
+}

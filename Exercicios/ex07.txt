@@ -1,0 +1,29 @@
+namespace CsharpEx07;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        ApresentarPrograma();
+        Calculo();
+    }
+
+    public static void ApresentarPrograma()
+    {
+        Console.WriteLine("Programa: Quadrado de Asteriscos");
+    }
+
+    public static void Calculo()
+    {
+        Console.Write("Tamanho do lado: ");
+        int lado = Convert.ToInt32(Console.ReadLine());
+
+        for (int i = 0; i < lado; i++)
+        {
+            for (int j = 0; j < lado; j++)
+                Console.Write("* ");
+
+            Console.WriteLine();
+        }
+    }
+}

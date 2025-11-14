@@ -1,0 +1,24 @@
+namespace CsharpEx10;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        ApresentarPrograma();
+        Calculo();
+    }
+
+    public static void ApresentarPrograma()
+    {
+        Console.WriteLine("Programa: Soletrar frase");
+    }
+
+    public static void Calculo()
+    {
+        Console.Write("Frase: ");
+        string frase = Console.ReadLine();
+
+        foreach (char c in frase)
+            Console.WriteLine(c);
+    }
+}

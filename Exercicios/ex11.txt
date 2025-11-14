@@ -1,0 +1,36 @@
+namespace CsharpEx11;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        ApresentarPrograma();
+        Calculo();
+    }
+
+    public static void ApresentarPrograma()
+    {
+        Console.WriteLine("Programa: Soletrar com contagem e espaços");
+    }
+
+    public static void Calculo()
+    {
+        Console.Write("Frase: ");
+        string frase = Console.ReadLine();
+
+        int contador = 1;
+
+        foreach (char c in frase)
+        {
+            if (c == ' ')
+            {
+                Console.WriteLine("Espaço");
+            }
+            else
+            {
+                Console.WriteLine($"Letra {contador} = {c}");
+                contador++;
+            }
+        }
+    }
+}

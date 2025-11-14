@@ -1,0 +1,24 @@
+namespace CsharpEx06;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        ApresentarPrograma();
+        Calculo();
+    }
+
+    public static void ApresentarPrograma()
+    {
+        Console.WriteLine("Programa: Linha de asteriscos");
+    }
+
+    public static void Calculo()
+    {
+        Console.Write("Informe a quantidade de pontos: ");
+        int qtd = Convert.ToInt32(Console.ReadLine());
+
+        for (int i = 1; i <= qtd; i++)
+            Console.Write("* ");
+    }
+}

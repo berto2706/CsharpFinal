@@ -1,0 +1,32 @@
+namespace CsharpEx08;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        ApresentarPrograma();
+        Calculo();
+    }
+
+    public static void ApresentarPrograma()
+    {
+        Console.WriteLine("Programa: Retângulo de Asteriscos");
+    }
+
+    public static void Calculo()
+    {
+        Console.Write("Base: ");
+        int bas = Convert.ToInt32(Console.ReadLine());
+
+        Console.Write("Altura: ");
+        int alt = Convert.ToInt32(Console.ReadLine());
+
+        for (int i = 0; i < alt; i++)
+        {
+            for (int j = 0; j < bas; j++)
+                Console.Write("* ");
+
+            Console.WriteLine();
+        }
+    }
+}
